@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bistro Dash — східний смак у сучасному форматі</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Unbounded:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=45" />
+  </head>
+  <body>
+    <svg class="map-filter" aria-hidden="true" focusable="false">
+      <filter id="map-brand" color-interpolation-filters="sRGB">
+        <feColorMatrix type="saturate" values="0" />
+        <feComponentTransfer>
+          <feFuncR type="linear" slope="1.45" intercept="-0.18" />
+          <feFuncG type="linear" slope="1.45" intercept="-0.18" />
+          <feFuncB type="linear" slope="1.45" intercept="-0.18" />
+        </feComponentTransfer>
+        <feColorMatrix
+          type="matrix"
+          values="
+            -0.843 0 0 0 1
+            -0.828 0 0 0 0.953
+            -0.600 0 0 0 0.714
+             0     0 0 1 0"
+        />
+      </filter>
+    </svg>
+    <header>
+      <a class="logo" href="#hero" aria-label="Bistro Dash">
+        <img src="public/icons/logo.svg" width="242" height="56" alt="" />
+      </a>
+      <input id="nav-toggle" type="checkbox" hidden />
+      <label class="nav-toggle" for="nav-toggle" aria-label="Меню">
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <a href="#location">Локація</a>
+        <a href="#services">Послуги</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="band hero" id="hero">
+        <div class="media-pad">
+          <div class="frame">
+            <img src="public/images/figma/hero.webp" alt="Вхід Bistro Dash" />
+          </div>
+        </div>
+        <div class="hero-title">
+          <h1>
+            <span class="display">Східний смак</span>
+            <span class="script">У сучасному</span>
+            <span class="display">форматі</span>
+          </h1>
+          <a class="btn btn-ghost" href="https://pizzadashua.choiceqr.com" target="_blank" rel="noreferrer">
+            Подивитись меню
+            <img src="public/icons/arrow.svg" width="20.8536" height="20.8536" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <section class="quote-scroll" id="about">
+        <div class="quote-sticky">
+          <div class="quote-media" aria-hidden="true">
+            <img src="public/images/interior-1.webp" alt="" />
+            <img src="public/images/interior-2.webp" alt="" />
+            <img src="public/images/interior-3.webp" alt="" />
+            <div class="quote-dim"></div>
+          </div>
+          <p class="quote-copy">
+            Місце, де східні та європейські традиції поєднуються з високими стандартами
+            <span class="script">Халяльної</span>
+            кухні. Дбаємо про атмосферу та якість сервісу, щоб кожен ваш візит залишав
+            <span class="script">Приємні спогади.</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="band split location">
+        <div class="copy copy-center" id="location">
+          <h2 class="headline location-title">
+            Приходьте<br />
+            в <span class="script">Гості</span>
+          </h2>
+          <div class="info">
+            <div class="info-head">Локація</div>
+            <a
+              class="info-row"
+              href="https://www.google.com/maps/place/Bistro+Dash/@50.4381074,30.5096662,17z"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Київ, вул. Володимирська, 70
+            </a>
+          </div>
+          <div class="info">
+            <div class="info-head">Графік</div>
+            <div class="info-row">
+              <span class="info-label">Пн–Сб</span>
+              <span>09:00–22:00</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Нд</span>
+              <span>09:00–21:00</span>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-head">Телефони</div>
+            <div class="info-row">
+              <span class="info-label">Спільний</span>
+              <a href="tel:+380639989349">+38 063 998 93 49</a>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Наталія</span>
+              <a href="tel:+380505995568">+38 050 599 55 68</a>
+            </div>
+          </div>
+        </div>
+        <div class="media-pad">
+          <div class="frame map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.1606953624146!2d30.50966619999999!3d50.4381074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1ea21e5d63%3A0xd2f2f683e66f8571!2sBistro%20Dash!5e0!3m2!1sru!2srs!4v1789918652011!5m2!1sru!2srs"
+              title="Bistro Dash на карті"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <div class="services">
+        <div class="services-mark">
+          <img
+            id="services"
+            src="public/icons/poslugy.svg"
+            width="1376"
+            height="174.93"
+            alt="Послуги"
+          />
+        </div>
+
+        <section class="band split" id="catering">
+          <div class="copy">
+            <div class="copy-head">
+              <p class="eyebrow">Catering</p>
+              <h2 class="headline">
+                Організуємо смачну їжу <span class="script">на виїзді</span>
+              </h2>
+            </div>
+            <ul class="points">
+              <li><span class="num">1</span> Інтернаціональне меню, гнучкий підхід</li>
+              <li><span class="num">2</span> Підлаштуємось під кількість гостей та бюджет</li>
+              <li><span class="num">3</span> Індивідуальні гастрономічні рішення</li>
+            </ul>
+          </div>
+          <div class="media-pad">
+            <div class="frame">
+              <img src="public/images/figma/catering.webp" alt="Кейтеринг Bistro Dash" />
+            </div>
+          </div>
+        </section>
+
+        <section class="band split reverse" id="breakfast">
+          <div class="media-pad">
+            <div class="frame">
+              <img src="public/images/figma/breakfast.webp" alt="Східний сніданок" />
+            </div>
+          </div>
+          <div class="copy">
+            <div class="copy-head">
+              <p class="eyebrow">Східний сніданок</p>
+              <h2 class="headline">
+                Приходьте із компанією за <span class="script">Атмосферним</span> сніданком
+              </h2>
+            </div>
+            <div class="icon-points">
+              <div class="icon-point">
+                <span class="num num-icon">
+                  <img src="public/icons/messages.svg" width="24" height="24" alt="" />
+                </span>
+                <p>Ідеальний варіант для дружніх зустрічей, корпоративних ранків чи сімейних вихідних.</p>
+              </div>
+              <div class="icon-point">
+                <span class="num num-icon">
+                  <img src="public/icons/chef-hat.svg" width="24" height="24" alt="" />
+                </span>
+                <p>
+                  Традиційні закуски: сир, масло, свіжі овочі; гарячі страви: менемен, яєшня, хліб із печі та
+                  ароматний чай.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="band split" id="tea">
+          <div class="copy">
+            <div class="copy-head">
+              <p class="eyebrow">Чайна церемонія</p>
+              <h2 class="headline">
+                Справжній досвід <span class="script">Східної</span> чайної церемонії
+              </h2>
+            </div>
+            <ul class="points">
+              <li><span class="num">1</span> Підкреслить статус вашого заходу</li>
+              <li><span class="num">2</span> Пориньте в атмосферу східного чаювання</li>
+            </ul>
+            <p class="aside">
+              Ідеальний формат інтерактивної паузи для ділових зустрічей, презентацій та масштабних подій.
+            </p>
+          </div>
+          <div class="media-pad">
+            <div class="frame">
+              <img src="public/images/figma/tea.webp" alt="Чайна церемонія" />
+            </div>
+          </div>
+        </section>
+
+        <section class="band split reverse" id="foodbox">
+          <div class="media-pad">
+            <div class="frame">
+              <img src="public/images/figma/foodbox.webp" alt="Food box Bistro Dash" />
+            </div>
+          </div>
+          <div class="copy">
+            <div class="copy-head">
+              <p class="eyebrow">Food box</p>
+              <h2 class="headline">
+                Замовляйте <span class="script">Готові сети</span> східних Страв
+              </h2>
+            </div>
+            <ul class="points">
+              <li><span class="num">1</span> Збалансовані набори зі смачними та ситними стравами</li>
+              <li><span class="num">2</span> Зручно взяти з собою, замовити в офіс або додому</li>
+              <li>
+                <span class="num">3</span> Обіди, вечері та легкі перекуси - усе вже зібрано в одному боксі
+              </li>
+            </ul>
+            <a class="btn btn-cream" href="https://pizzadashua.choiceqr.com" target="_blank" rel="noreferrer">
+              Подивитись набори
+              <img src="public/icons/arrow-red.svg" width="20.8536" height="20.8536" alt="" />
+            </a>
+          </div>
+        </section>
+
+        <section class="band split" id="furshet">
+          <div class="copy">
+            <div class="copy-head">
+              <p class="eyebrow">Фуршет</p>
+              <h2 class="headline">Легкий Формат для <span class="script">Спілкування</span></h2>
+            </div>
+            <ul class="points">
+              <li><span class="num">1</span> Міні-порції закусок для зручного тримання в руці</li>
+              <li>
+                <span class="num">2</span> Авторські канапе та тарталетки - поєднання смаку й естетики
+              </li>
+              <li>
+                <span class="num">3</span> Гості можуть вільно рухатися, спілкуватися й насолоджуватися
+                стравами без зайвих труднощів
+              </li>
+            </ul>
+          </div>
+          <div class="media-pad">
+            <div class="frame">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="public/images/figma/furshet.webp"
+                aria-label="Фуршет Bistro Dash"
+              >
+                <source src="public/videos/furshet.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section class="band split reverse" id="banket">
+          <div class="media-pad">
+            <div class="frame">
+              <video
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                poster="public/images/figma/banket.webp"
+                aria-label="Банкет Bistro Dash"
+              >
+                <source src="public/videos/banket.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+          <div class="copy">
+            <div class="copy-head">
+              <p class="eyebrow">Банкет</p>
+              <h2 class="headline">Накрийте смачний стіл <span class="script">без турбот</span></h2>
+            </div>
+            <ul class="points">
+              <li><span class="num">1</span> Інтернаціональне халяльне меню</li>
+              <li>
+                <span class="num">2</span> Професійна команда організує, приготує та обслуговує банкет
+                будь-якого формату
+              </li>
+              <li>
+                <span class="num">3</span> Створюємо атмосферу свята там, де ви цього бажаєте - офіс, парк,
+                чи приватна локація
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="contacts" id="contacts">
+      <div class="contacts-main">
+        <div class="contacts-title">
+          <p class="eyebrow">Контакти</p>
+          <h2 class="headline">
+            Звʼяжитесь з нами, будемо раді
+            <span class="script">Познайомитись</span>
+          </h2>
+        </div>
+        <div class="contacts-info">
+          <div class="info">
+            <div class="info-head">Телефони</div>
+            <div class="info-row">
+              <span class="info-label">Спільний</span>
+              <a href="tel:+380639989349">+38 063 998 93 49</a>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Наталія</span>
+              <span class="contact-meta">
+                <span class="contact-socials">
+                  <a href="https://t.me/+380505995568" target="_blank" rel="noreferrer" aria-label="Telegram">
+                    <img src="public/icons/telegram.svg" width="19" height="19" alt="" />
+                  </a>
+                  <a href="https://wa.me/380505995568" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                    <img src="public/icons/whatsapp.svg" width="19" height="18.9257" alt="" />
+                  </a>
+                  <a href="viber://chat?number=380505995568" aria-label="Viber">
+                    <img src="public/icons/viber.svg" width="20" height="20" alt="" />
+                  </a>
+                </span>
+                <a href="tel:+380505995568">+38 050 599 55 68</a>
+              </span>
+            </div>
+          </div>
+          <div class="info">
+            <div class="info-head">Чи приходьте в гості</div>
+            <a
+              class="info-row"
+              href="https://www.google.com/maps/place/Bistro+Dash/@50.4381074,30.5096662,17z"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Київ, вул. Володимирська, 70</span>
+              <img src="public/icons/arrow-dark.svg" width="20.8536" height="20.8536" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-foot">
+        <p>Bistro Dash copyright©</p>
+        <a class="designed-by" href="https://donotpress.studio" target="_blank" rel="noreferrer" aria-label="Designed by Do Not Press">
+          Designed by:
+          <img src="public/images/dnp-logo.png" width="71" height="24" alt="Do Not Press" />
+        </a>
+      </div>
+    </footer>
+
+    <script>
+      /* ── Section 2 (#about) animation — edit here ── */
+      const QUOTE_ANIM = {
+        /* layout (also mirrored in styles.css) */
+        sectionHeightVh: 420,
+        overlapHeroSvh: 20,
+
+        /* 1. Parallax while image is small */
+        parallaxLag: 0.2, // 0 = move with scroll, ~1 = almost still
+        parallaxFadeVh: 0.5, // lag fades out over this fraction of vh as section pins
+
+        /* 2. Expand small frame → fullscreen (keyed to -rect.top / vh) */
+        expandStartVh: -0.28, // when expand begins (negative = still below pin)
+        expandEndVh: 0.72, // when fully expanded
+        expandEase: 2.2, // power curve; higher = stays small longer
+        smallInsetY: 28, // starting top/bottom clip %
+        smallInsetX: 32, // starting left/right clip %
+        smallRadius: 40, // starting corner radius (px)
+        fullRadius: 8, // radius near end of expand
+
+        /* 3–4. Interior photo reveals (overall section progress 0–1) */
+        imagesFrom: 0.26,
+        imagesTo: 0.8,
+        image2From: 0.16, // within images window
+        image2To: 0.4,
+        image3From: 0.56,
+        image3To: 0.82,
+        imageRevealInset: 50, // start clip inset % for each photo
+
+        /* 5. Dim gradient + quote copy */
+        textFrom: 0.60,
+        textTo: 1,
+        textSlideVh: 120, // start offset below viewport
+        dimOpacity: 0.7,
+        dimMidSpread: 38, // % above solid stop
+        dimSoftSpread: 78, // % above solid stop
+      };
+
+      const header = document.querySelector("header");
+      const navToggle = document.querySelector("#nav-toggle");
+      const setHeaderState = () => {
+        header?.classList.toggle("is-scrolled", window.scrollY > 8);
+      };
+      setHeaderState();
+      window.addEventListener("scroll", setHeaderState, { passive: true });
+
+      const scrollToHash = (hash, { smooth = true } = {}) => {
+        if (!hash || hash === "#") return false;
+        const id = hash.slice(1);
+        const el = document.getElementById(id);
+        if (!el) return false;
+        const behavior =
+          smooth && !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? "smooth"
+            : "auto";
+        el.scrollIntoView({
+          behavior,
+          block: id === "services" || id === "location" ? "center" : "start",
+        });
+        return true;
+      };
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (event) => {
+          const hash = link.getAttribute("href");
+          if (!scrollToHash(hash)) return;
+          event.preventDefault();
+          if (navToggle) navToggle.checked = false;
+          history.pushState(null, "", hash);
+        });
+      });
+
+      if (location.hash) {
+        requestAnimationFrame(() => scrollToHash(location.hash, { smooth: false }));
+      }
+
+      const hero = document.querySelector(".hero");
+      const quoteScroll = document.querySelector(".quote-scroll");
+      const quoteSticky = quoteScroll?.querySelector(".quote-sticky");
+      const quoteMedia = quoteScroll?.querySelector(".quote-media");
+      const quoteLayers = quoteScroll
+        ? [...quoteScroll.querySelectorAll(".quote-media img")].slice(1)
+        : [];
+      const quoteDim = quoteScroll?.querySelector(".quote-dim");
+      const quoteCopy = quoteScroll?.querySelector(".quote-copy");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      const clamp01 = (value) => Math.min(1, Math.max(0, value));
+      const range = (progress, from, to) => clamp01((progress - from) / (to - from));
+
+      if (quoteScroll) {
+        quoteScroll.style.setProperty("--quote-h", `${QUOTE_ANIM.sectionHeightVh}vh`);
+        quoteScroll.style.setProperty("--quote-overlap", `-${QUOTE_ANIM.overlapHeroSvh}svh`);
+        quoteScroll.style.setProperty(
+          "--quote-inset-y",
+          `${QUOTE_ANIM.smallInsetY}%`
+        );
+        quoteScroll.style.setProperty(
+          "--quote-inset-x",
+          `${QUOTE_ANIM.smallInsetX}%`
+        );
+        quoteScroll.style.setProperty(
+          "--quote-radius",
+          `${QUOTE_ANIM.smallRadius}px`
+        );
+      }
+
+      const updateQuoteMask = () => {
+        if (!quoteScroll || !quoteLayers.length) return;
+        if (reduceMotion) {
+          quoteLayers.forEach((img) => {
+            img.style.clipPath = "none";
+          });
+          if (quoteSticky) quoteSticky.style.transform = "none";
+          if (quoteMedia) quoteMedia.style.clipPath = "none";
+          if (quoteDim) {
+            quoteDim.style.setProperty("--dim-solid", "100%");
+            quoteDim.style.setProperty("--dim-mid", "100%");
+            quoteDim.style.setProperty("--dim-soft", "100%");
+          }
+          if (quoteCopy) {
+            quoteCopy.style.visibility = "visible";
+            quoteCopy.style.transform = "none";
+          }
+          return;
+        }
+
+        const A = QUOTE_ANIM;
+        const vh = window.innerHeight;
+        const rect = quoteScroll.getBoundingClientRect();
+        const total = quoteScroll.offsetHeight - vh;
+        if (total <= 0) return;
+        const progress = clamp01(-rect.top / total);
+
+        const expand = Math.pow(
+          range(-rect.top, vh * A.expandStartVh, vh * A.expandEndVh),
+          A.expandEase
+        );
+        const small = 1 - expand;
+        const heroMoved = Math.max(0, -(hero?.getBoundingClientRect().top || 0));
+        const fade = clamp01(rect.top / Math.max(1, vh * A.parallaxFadeVh));
+        const lagDown = small * fade * heroMoved * A.parallaxLag;
+
+        if (quoteSticky) {
+          quoteSticky.style.transform = lagDown
+            ? `translate3d(0, ${lagDown}px, 0)`
+            : "none";
+        }
+
+        if (quoteMedia) {
+          if (expand >= 0.995) {
+            quoteMedia.style.clipPath = "none";
+          } else {
+            const insetY = small * A.smallInsetY;
+            const insetX = small * A.smallInsetX;
+            const radius = A.fullRadius + small * (A.smallRadius - A.fullRadius);
+            quoteMedia.style.clipPath = `inset(${insetY}% ${insetX}% round ${radius}px)`;
+          }
+        }
+
+        const imageProgress = range(progress, A.imagesFrom, A.imagesTo);
+        const reveals = [
+          range(imageProgress, A.image2From, A.image2To),
+          range(imageProgress, A.image3From, A.image3To),
+        ];
+
+        quoteLayers.forEach((img, index) => {
+          const local = reveals[index] ?? 1;
+          img.style.clipPath =
+            local >= 1
+              ? "none"
+              : `inset(${(1 - local) * A.imageRevealInset}% round ${A.smallRadius}px)`;
+        });
+
+        const textProgress = 1 - Math.pow(1 - range(progress, A.textFrom, A.textTo), 3);
+        if (quoteDim) {
+          const solid = textProgress * 100;
+          const mid = Math.min(100, solid + A.dimMidSpread);
+          const soft = Math.min(100, solid + A.dimSoftSpread);
+          quoteDim.style.setProperty("--dim-solid", `${solid}%`);
+          quoteDim.style.setProperty("--dim-mid", `${mid}%`);
+          quoteDim.style.setProperty("--dim-soft", `${soft}%`);
+        }
+        if (quoteCopy) {
+          quoteCopy.style.visibility = textProgress > 0 ? "visible" : "hidden";
+          quoteCopy.style.transform = `translate3d(0, ${(1 - textProgress) * A.textSlideVh}vh, 0)`;
+        }
+      };
+
+      updateQuoteMask();
+      window.addEventListener("scroll", updateQuoteMask, { passive: true });
+      window.addEventListener("resize", updateQuoteMask);
+    </script>
+  </body>
+</html>
