@@ -2,15 +2,22 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bistro Dash — східний смак у сучасному форматі</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#28201D" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#28201D" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#28201D" />
+    <meta name="color-scheme" content="dark" />
+    <title>Bistro Dash: східний смак у сучасному форматі</title>
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Unbounded:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=45" />
+    <link rel="stylesheet" href="styles.css?v=75" />
   </head>
   <body>
     <svg class="map-filter" aria-hidden="true" focusable="false">
@@ -37,13 +44,29 @@
       </a>
       <input id="nav-toggle" type="checkbox" hidden />
       <label class="nav-toggle" for="nav-toggle" aria-label="Меню">
-        <span></span>
-        <span></span>
+        <img class="nav-toggle-open" src="public/icons/menu.svg" width="20" height="20" alt="" />
+        <img class="nav-toggle-close" src="public/icons/close.svg" width="20" height="20" alt="" />
       </label>
       <nav>
-        <a href="#location">Локація</a>
-        <a href="#services">Послуги</a>
-        <a href="#contacts">Контакти</a>
+        <div class="nav-links">
+          <a href="#location">Локація</a>
+          <a href="#services">Послуги</a>
+          <a href="#contacts">Контакти</a>
+        </div>
+        <div class="nav-mark" aria-hidden="true">
+          <img src="public/icons/nav-mark.svg" alt="" />
+        </div>
+        <div class="nav-cta">
+          <a
+            class="btn btn-menu"
+            href="https://pizzadashua.choiceqr.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Подивитися меню
+            <img src="public/icons/arrow-menu.svg" width="16" height="16" alt="" />
+          </a>
+        </div>
       </nav>
     </header>
 
@@ -61,7 +84,7 @@
             <span class="display">форматі</span>
           </h1>
           <a class="btn btn-ghost" href="https://pizzadashua.choiceqr.com" target="_blank" rel="noreferrer">
-            Подивитись меню
+            Подивитися меню
             <img src="public/icons/arrow.svg" width="20.8536" height="20.8536" alt="" />
           </a>
         </div>
@@ -120,7 +143,20 @@
             </div>
             <div class="info-row">
               <span class="info-label">Наталія</span>
-              <a href="tel:+380505995568">+38 050 599 55 68</a>
+              <span class="contact-meta">
+                <span class="contact-socials">
+                  <a href="https://t.me/+380505995568" target="_blank" rel="noreferrer" aria-label="Telegram">
+                    <img src="public/icons/telegram.svg" width="19" height="19" alt="" />
+                  </a>
+                  <a href="https://wa.me/380505995568" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+                    <img src="public/icons/whatsapp.svg" width="19" height="18.9257" alt="" />
+                  </a>
+                  <a href="viber://chat?number=380505995568" aria-label="Viber">
+                    <img src="public/icons/viber.svg" width="20" height="20" alt="" />
+                  </a>
+                </span>
+                <a href="tel:+380505995568">+38 050 599 55 68</a>
+              </span>
             </div>
           </div>
         </div>
@@ -211,7 +247,7 @@
               </h2>
             </div>
             <ul class="points">
-              <li><span class="num">1</span> Підкреслить статус вашого заходу</li>
+              <li><span class="num">1</span> Підкресліть статус вашого заходу</li>
               <li><span class="num">2</span> Пориньте в атмосферу східного чаювання</li>
             </ul>
             <p class="aside">
@@ -235,18 +271,18 @@
             <div class="copy-head">
               <p class="eyebrow">Food box</p>
               <h2 class="headline">
-                Замовляйте <span class="script">Готові сети</span> східних Страв
+                Замовляйте <span class="script">Готові сети</span> східних страв
               </h2>
             </div>
             <ul class="points">
               <li><span class="num">1</span> Збалансовані набори зі смачними та ситними стравами</li>
               <li><span class="num">2</span> Зручно взяти з собою, замовити в офіс або додому</li>
               <li>
-                <span class="num">3</span> Обіди, вечері та легкі перекуси - усе вже зібрано в одному боксі
+                <span class="num">3</span> Обіди, вечері та легкі перекуси вже зібрані в одному боксі
               </li>
             </ul>
             <a class="btn btn-cream" href="https://pizzadashua.choiceqr.com" target="_blank" rel="noreferrer">
-              Подивитись набори
+              Подивитися набори
               <img src="public/icons/arrow-red.svg" width="20.8536" height="20.8536" alt="" />
             </a>
           </div>
@@ -256,12 +292,12 @@
           <div class="copy">
             <div class="copy-head">
               <p class="eyebrow">Фуршет</p>
-              <h2 class="headline">Легкий Формат для <span class="script">Спілкування</span></h2>
+              <h2 class="headline">Легкий формат для <span class="script">Спілкування</span></h2>
             </div>
             <ul class="points">
               <li><span class="num">1</span> Міні-порції закусок для зручного тримання в руці</li>
               <li>
-                <span class="num">2</span> Авторські канапе та тарталетки - поєднання смаку й естетики
+                <span class="num">2</span> Авторські канапе та тарталетки: поєднання смаку й естетики
               </li>
               <li>
                 <span class="num">3</span> Гості можуть вільно рухатися, спілкуватися й насолоджуватися
@@ -314,8 +350,8 @@
                 будь-якого формату
               </li>
               <li>
-                <span class="num">3</span> Створюємо атмосферу свята там, де ви цього бажаєте - офіс, парк,
-                чи приватна локація
+                <span class="num">3</span> Створюємо атмосферу свята там, де вам зручно: в офісі, в парку
+                чи на приватній локації
               </li>
             </ul>
           </div>
@@ -328,8 +364,8 @@
         <div class="contacts-title">
           <p class="eyebrow">Контакти</p>
           <h2 class="headline">
-            Звʼяжитесь з нами, будемо раді
-            <span class="script">Познайомитись</span>
+            Звʼяжіться з нами, будемо раді
+            <span class="script">Познайомитися</span>
           </h2>
         </div>
         <div class="contacts-info">
@@ -358,7 +394,7 @@
             </div>
           </div>
           <div class="info">
-            <div class="info-head">Чи приходьте в гості</div>
+            <div class="info-head">Або приходьте в гості</div>
             <a
               class="info-row"
               href="https://www.google.com/maps/place/Bistro+Dash/@50.4381074,30.5096662,17z"
@@ -420,6 +456,28 @@
 
       const header = document.querySelector("header");
       const navToggle = document.querySelector("#nav-toggle");
+      const navToggleLabel = document.querySelector(".nav-toggle");
+      const mobileQuote = window.matchMedia("(max-width: 900px)");
+      const applyMobileQuote = () => {
+        if (!mobileQuote.matches) return;
+        Object.assign(QUOTE_ANIM, {
+          sectionHeightVh: 300,
+          overlapHeroSvh: 0,
+          smallInsetY: 16,
+          smallInsetX: 6,
+          smallRadius: 24,
+          textSlideVh: 70,
+        });
+      };
+      applyMobileQuote();
+
+      const syncNavToggleLabel = () => {
+        if (!navToggleLabel || !navToggle) return;
+        navToggleLabel.setAttribute("aria-label", navToggle.checked ? "Закрити" : "Меню");
+      };
+      syncNavToggleLabel();
+      navToggle?.addEventListener("change", syncNavToggleLabel);
+
       const setHeaderState = () => {
         header?.classList.toggle("is-scrolled", window.scrollY > 8);
       };
@@ -447,7 +505,10 @@
           const hash = link.getAttribute("href");
           if (!scrollToHash(hash)) return;
           event.preventDefault();
-          if (navToggle) navToggle.checked = false;
+          if (navToggle) {
+            navToggle.checked = false;
+            syncNavToggleLabel();
+          }
           history.pushState(null, "", hash);
         });
       });
